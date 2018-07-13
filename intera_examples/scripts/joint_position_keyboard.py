@@ -55,20 +55,20 @@ def map_keyboard(side):
                 gripper.calibrate()
 
     bindings = {
-        '1': (set_j, [limb, joints[0], 0.1], joints[0]+" increase"),
-        'q': (set_j, [limb, joints[0], -0.1], joints[0]+" decrease"),
-        '2': (set_j, [limb, joints[1], 0.1], joints[1]+" increase"),
-        'w': (set_j, [limb, joints[1], -0.1], joints[1]+" decrease"),
-        '3': (set_j, [limb, joints[2], 0.1], joints[2]+" increase"),
-        'e': (set_j, [limb, joints[2], -0.1], joints[2]+" decrease"),
-        '4': (set_j, [limb, joints[3], 0.1], joints[3]+" increase"),
-        'r': (set_j, [limb, joints[3], -0.1], joints[3]+" decrease"),
-        '5': (set_j, [limb, joints[4], 0.1], joints[4]+" increase"),
-        't': (set_j, [limb, joints[4], -0.1], joints[4]+" decrease"),
-        '6': (set_j, [limb, joints[5], 0.1], joints[5]+" increase"),
-        'y': (set_j, [limb, joints[5], -0.1], joints[5]+" decrease"),
-        '7': (set_j, [limb, joints[6], 0.1], joints[6]+" increase"),
-        'u': (set_j, [limb, joints[6], -0.1], joints[6]+" decrease")
+        '1': (set_j, [limb, joints[0], 0.01], joints[0]+" increase"),
+        'q': (set_j, [limb, joints[0], -0.01], joints[0]+" decrease"),
+        '2': (set_j, [limb, joints[1], 0.01], joints[1]+" increase"),
+        'w': (set_j, [limb, joints[1], -0.01], joints[1]+" decrease"),
+        '3': (set_j, [limb, joints[2], 0.01], joints[2]+" increase"),
+        'e': (set_j, [limb, joints[2], -0.01], joints[2]+" decrease"),
+        '4': (set_j, [limb, joints[3], 0.01], joints[3]+" increase"),
+        'r': (set_j, [limb, joints[3], -0.01], joints[3]+" decrease"),
+        '5': (set_j, [limb, joints[4], 0.01], joints[4]+" increase"),
+        't': (set_j, [limb, joints[4], -0.01], joints[4]+" decrease"),
+        '6': (set_j, [limb, joints[5], 0.01], joints[5]+" increase"),
+        'y': (set_j, [limb, joints[5], -0.01], joints[5]+" decrease"),
+        '7': (set_j, [limb, joints[6], 0.01], joints[6]+" increase"),
+        'u': (set_j, [limb, joints[6], -0.01], joints[6]+" decrease")
      }
     if has_gripper:
         bindings.update({
