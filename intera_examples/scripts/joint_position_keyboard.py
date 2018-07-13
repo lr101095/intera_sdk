@@ -94,6 +94,13 @@ def map_keyboard(side):
                     #expand binding to something like "set_j(right, 'j0', 0.1)"
                     cmd[0](*cmd[1])
                     print("command: %s" % (cmd[2],))
+                    print "joint 0 (rad): ", limb.joint_angle(joints[0])
+                    print "joint 1 (rad): ", limb.joint_angle(joints[1])
+                    print "joint 2 (rad): ", limb.joint_angle(joints[2])
+                    print "joint 3 (rad): ", limb.joint_angle(joints[3])
+                    print "joint 4 (rad): ", limb.joint_angle(joints[4])
+                    print "joint 5 (rad): ", limb.joint_angle(joints[5])
+                    print "joint 6 (rad): ", limb.joint_angle(joints[6])
             else:
                 print("key bindings: ")
                 print("  Esc: Quit")
